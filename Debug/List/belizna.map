@@ -1,0 +1,38 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+i                                                                                 R4           1
+adc                                                                               R5,R6        2
+dark                                                                              R7,R8        2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+adc_isr                                                                           0x00064     29
+main                                                                              0x00081    130
+putchar                                                                           0x00103     10
+put_usart_G100                                                                    0x0010D     13
+_print_G100                                                                       0x0011A    308
+printf                                                                            0x0024E     37
+strlen                                                                            0x00273     12
+strlenf                                                                           0x0027F     13
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+adc_isr                                                                           0x00064     29
+main                                                                              0x00081    130
+putchar                                                                           0x00103     10
+put_usart_G100                                                                    0x0010D     13
+_print_G100                                                                       0x0011A    308
+printf                                                                            0x0024E     37
+strlen                                                                            0x00273     12
+strlenf                                                                           0x0027F     13

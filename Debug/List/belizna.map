@@ -16,23 +16,11 @@ dark                                                                            
 FLASH Allocation [words]
 Function                                                                          Address   Size
 ------------------------------------------------------------------------------------------------
-adc_isr                                                                           0x00064     29
-main                                                                              0x00081    130
-putchar                                                                           0x00103     10
-put_usart_G100                                                                    0x0010D     13
-_print_G100                                                                       0x0011A    308
-printf                                                                            0x0024E     37
-strlen                                                                            0x00273     12
-strlenf                                                                           0x0027F     13
-
-FLASH Allocation [words]
-Function                                                                          Address   Size
-------------------------------------------------------------------------------------------------
-adc_isr                                                                           0x00064     29
-main                                                                              0x00081    130
-putchar                                                                           0x00103     10
-put_usart_G100                                                                    0x0010D     13
-_print_G100                                                                       0x0011A    308
-printf                                                                            0x0024E     37
-strlen                                                                            0x00273     12
-strlenf                                                                           0x0027F     13
+adc_isr                                                                           0x00080     29
+main                                                                              0x0009D    138
+putchar                                                                           0x00127     10
+put_usart_G100                                                                    0x00131     13
+_print_G100                                                                       0x0013E    308
+printf                                                                            0x00272     37
+strlen                                                                            0x00297     12
+strlenf                                                                           0x002A3     13

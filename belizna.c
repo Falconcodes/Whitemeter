@@ -12,7 +12,7 @@
 #define LED PORTB.5
 #define SENS PORTD.2
 #define PREHEAT_TIME 20
-#define COOLING_TIME 80
+#define COOLING_TIME 30
 #define PROBES 20
 #define ETALON_100 1000
 
@@ -58,8 +58,9 @@ ADMUX=ADC_VREF_TYPE;
 ADCSRA=(1<<ADEN) | (0<<ADSC) | (0<<ADATE) | (0<<ADIF) | (1<<ADIE) | (1<<ADPS2) | (0<<ADPS1) | (0<<ADPS0);
 ADCSRB=(0<<ADTS2) | (0<<ADTS1) | (0<<ADTS0);
 
-LED=0;
 
+printf("Dark BaseLine Measuring...");
+LED=0;
 for(i=0; i<PROBES; i++) 
 {
 SENS=1;
@@ -71,9 +72,10 @@ dark+=ADCW;
 delay_ms(COOLING_TIME);
 }
 dark/=PROBES;
-printf("dark_level %i", dark);
+printf("Dark Level = %i pt.", dark);
 delay_ms(500);
 LED=1;
+printf("Whiteness Measuring...");
 delay_ms(500);
 // Global enable interrupts
 #asm("sei")
